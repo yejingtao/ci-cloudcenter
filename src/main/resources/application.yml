@@ -1,0 +1,27 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: ci-cloudcenter
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8111/eureka/
+feign:
+  hystrix:
+    enabled: false
+    
+logging:
+  file: logs/${spring.application.name}.log
+  
+cloud:
+  aliyun:
+    autoScalImageUpdate:
+      statusURLPrefix: http://10.100.129.133:9000/cloud/aliyun/scalImageStatus?intraIp=
+
+#Ribbon 超时时间设置
+#ribbon:
+#  ConnectTimeout: 500
+#  ReadTimeout:  3000

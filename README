@@ -1,0 +1,6 @@
+运维自动化服务-云平台中心
+
+负责定制和实现所有云平台相关的功能
+
+请根据实际情况修改注册地址:eureka.client.serviceUrl.defaultZone
+请根据实际情况修改日志地址:logging.file
